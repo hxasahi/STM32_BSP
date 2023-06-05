@@ -1,8 +1,15 @@
-#include "stm32f10x.h"   // 相当于51单片机中的  #include <reg51.h>
+#include "stm32f10x.h"   
+#include "bsp_debug.h"
+#include "bsp_delay.h"
+#include "bsp_SysTick.h"
 
 int main(void)
 {
-	// 来到这里的时候，系统的时钟已经被配置成72M。
+	DEBUG_Config();	
+	SysTick_Init();
+	while(1)
+	{
+		printf("demo");
+		Delay_ms(1000);
+	}
 }
-
-
