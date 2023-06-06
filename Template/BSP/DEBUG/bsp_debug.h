@@ -1,6 +1,7 @@
 #ifndef __BSP_DEBUG_H_
 #define	__BSP_DEBUG_H_
-
+#define USE_DEBUG  1
+#if USE_DEBUG
 #include "stm32f10x.h"
 #include <stdio.h>
 
@@ -106,5 +107,5 @@ void DEBUG_Config(void);
 void DEBUG_SendByte( USART_TypeDef * pUSARTx, uint8_t ch);
 void DEBUG_SendString( USART_TypeDef * pUSARTx, char *str);
 void DEBUG_SendHalfWord( USART_TypeDef * pUSARTx, uint16_t ch);
-
+#endif //USE_DEBUG
 #endif /* __BSP_USART_H_ */

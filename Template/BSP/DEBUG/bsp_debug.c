@@ -1,5 +1,5 @@
 #include "bsp_debug.h"
-
+#if USE_DEBUG
 /**
  * @brief  配置嵌套向量中断控制器NVIC
  * @param  无
@@ -158,4 +158,4 @@ int fgetc(FILE *f)
 
     return (int)USART_ReceiveData(DEBUG_USARTx);
 }
-
+#endif //USE_DEBUG

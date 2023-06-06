@@ -727,7 +727,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x616F8E00)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x647DA872)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x616F8E00)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x616F8E00)
-I (..\BSP\DEBUG\bsp_debug.h)(0x647DACCF)
+I (..\BSP\DEBUG\bsp_debug.h)(0x647EC1CA)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\BSP\delay\bsp_delay.h)(0x647EBF9A)
 I (..\BSP\Systick\bsp_SysTick.h)(0x647DB099)
@@ -764,8 +764,8 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x616F8E00)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x616F8E00)
 I (..\BSP\delay\bsp_delay.h)(0x647EBF9A)
 I (..\BSP\Key\bsp_key.h)(0x647EBF06)
-F (..\BSP\DEBUG\bsp_debug.c)(0x647DACF0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\User -I ..\BSP\DEBUG -I ..\BSP\Systick -I ..\BSP\delay -I ..\BSP\Key-I.\RTE\_Target_1-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\bsp_debug.o --omf_browse .\objects\bsp_debug.crf --depend .\objects\bsp_debug.d)
-I (..\BSP\DEBUG\bsp_debug.h)(0x647DACCF)
+F (..\BSP\DEBUG\bsp_debug.c)(0x647EC1EB)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\User -I ..\BSP\DEBUG -I ..\BSP\Systick -I ..\BSP\delay -I ..\BSP\Key-I.\RTE\_Target_1-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\bsp_debug.o --omf_browse .\objects\bsp_debug.crf --depend .\objects\bsp_debug.d)
+I (..\BSP\DEBUG\bsp_debug.h)(0x647EC1CA)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x616F8E00)
 I (..\Libraries\CMSIS\core_cm3.h)(0x616F8E00)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
