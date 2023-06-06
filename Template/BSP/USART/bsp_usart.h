@@ -5,11 +5,11 @@
 #include "stm32f10x.h"
 #include <stdio.h>
 
-#define USE_USART1  1
-#define USE_USART2  1
-#define USE_USART3  1
-#define USE_UART4  1
-#define USE_UART5  1
+#define USE_USART1  0
+#define USE_USART2  0
+#define USE_USART3  0
+#define USE_UART4  0
+#define USE_UART5  0	
 
 #if USE_USART1
 // ´®¿Ú1-USART1
@@ -19,7 +19,7 @@
 #define  USART1_GPIO_CLK           (RCC_APB2Periph_GPIOA)
 #define  USART1_GPIO_APBxClkCmd    RCC_APB2PeriphClockCmd
     
-#define  USART1_TX_GPIO_PORT       GPIOA   
+#define  USART1_TX_GPIO_PORT       GPIOA
 #define  USART1_TX_GPIO_PIN        GPIO_Pin_9
 #define  USART1_RX_GPIO_PORT       GPIOA
 #define  USART1_RX_GPIO_PIN        GPIO_Pin_10

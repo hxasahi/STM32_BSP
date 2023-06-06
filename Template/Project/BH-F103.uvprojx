@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User;..\BSP\DEBUG;..\BSP\Systick;..\BSP\delay;..\BSP\Key;..\BSP\USART</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User;..\BSP\DEBUG;..\BSP\Systick;..\BSP\delay;..\BSP\Key;..\BSP\USART;..\BSP\GPIO</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -564,6 +564,11 @@
               <FileName>bsp_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\USART\bsp_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\GPIO\bsp_gpio.c</FilePath>
             </File>
           </Files>
         </Group>

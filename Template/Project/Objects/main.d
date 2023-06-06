@@ -33,3 +33,5 @@
 .\objects\main.o: ..\BSP\delay\bsp_delay.h
 .\objects\main.o: ..\BSP\Systick\bsp_SysTick.h
 .\objects\main.o: ..\BSP\Key\bsp_key.h
+.\objects\main.o: ..\BSP\USART\bsp_usart.h
+.\objects\main.o: ..\BSP\GPIO\bsp_gpio.h
