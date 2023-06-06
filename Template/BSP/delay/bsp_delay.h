@@ -3,8 +3,8 @@
 
 #include "stm32f10x.h"
 
-void Delay_us(__IO u32 nTime);
-#define Delay_ms(x) Delay_us(100*x)	 //单位ms
+void Delay_10us(__IO u32 nTime);
+#define Delay_ms(x) Delay_10us(100*x)	 //单位ms
 
 void TimingDelay_Decrement(void);
 

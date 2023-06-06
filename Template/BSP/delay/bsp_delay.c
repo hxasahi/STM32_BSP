@@ -8,7 +8,7 @@ static __IO u32 TimingDelay;
   *		@arg nTime: Delay_us( 1 ) 则实现的延时为 1 * 10us = 10us
   * @retval  无
   */
-void Delay_us(__IO u32 nTime)
+void Delay_10us(__IO u32 nTime)
 { 
 	TimingDelay = nTime;	
 

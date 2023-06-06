@@ -32,3 +32,4 @@
 .\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: ..\BSP\delay\bsp_delay.h
 .\objects\main.o: ..\BSP\Systick\bsp_SysTick.h
+.\objects\main.o: ..\BSP\Key\bsp_key.h

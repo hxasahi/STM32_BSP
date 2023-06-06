@@ -24,6 +24,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
 #include "bsp_delay.h"
+#include "bsp_key.h"
+uint32_t time10ms;
 /** @addtogroup STM32F10x_StdPeriph_Template
   * @{
   */
@@ -134,7 +136,17 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
-	TimingDelay_Decrement();
+	TimingDelay_Decrement();  //10us
+	
+	if(time10ms<500)          //5*100*10us
+	{
+		time10ms++;
+	}
+	else                      //5ms
+	{
+		time10ms = 0;
+		TimingFIFO_KeyScan();
+	}	
 }
 
 /******************************************************************************/
