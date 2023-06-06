@@ -1,6 +1,7 @@
-#ifndef __bsp_key_H
-#define __bsp_key_H
-
+#ifndef __BSP_KEY_H
+#define __BSP_KEY_H
+#define USE_KEY  1
+#if USE_KEY
 #include "stm32f10x.h"
 
 #define    KEY1_GPIO_CLK	RCC_APB2Periph_GPIOA
@@ -106,4 +107,5 @@ uint8_t KEY_GetState(KEY_ID_E _ucKeyID);
 void KEY_SetParam(uint8_t _ucKeyID, uint16_t _LongTime, uint8_t  _RepeatSpeed);
 void KEY_FIFO_Clear(void);
 void TimingFIFO_KeyScan(void);			/*KEY_FIFO_SCAN*/
-#endif /*__bsp_key_H*/
+#endif  //USE_KEY
+#endif /*__BSP_KEY_H*/

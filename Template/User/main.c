@@ -9,10 +9,13 @@ int main(void)
 	uint8_t keycode;
 	DEBUG_Config();	
 	SysTick_Init();
+#if USE_KEY	
 	KEY_Init();
+#endif  //USE_KEY	
 	printf("key\r\n");
 	while(1)
 	{
+#if USE_KEY		
 		keycode=KEY_FIFO_Get();
 		if(keycode != KEY_NONE)
 		{
@@ -33,6 +36,7 @@ int main(void)
 				default:
 					;									
 			}
-		}		
+		}	
+#endif  //USE_KEY		
 	}
 }

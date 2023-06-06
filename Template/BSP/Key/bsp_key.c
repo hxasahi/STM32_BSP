@@ -1,5 +1,5 @@
 #include "bsp_key.h"
-
+#if USE_KEY
 #define HARD_KEY_NUM	3	   				/* 实体按键个数 */
 static KEY_T	s_tBtn[HARD_KEY_NUM] = {0};	/* 按键控制变量,结构体 */
 static KEY_FIFO_T s_tKey;					/* 按键FIFO变量,结构体 */
@@ -259,14 +259,6 @@ static void KEY_Detect(uint8_t i)
     }
 }
 
-/*
-*********************************************************************************************************
-*	函 数 名: bsp_KeyScan10ms
-*	功能说明: 扫描所有按键。非阻塞，被systick中断周期性的调用，10ms一次
-*	形    参: 无
-*	返 回 值: 无
-*********************************************************************************************************
-*/
 void KEY_Scan(void)
 {
     uint8_t i;
@@ -286,6 +278,9 @@ uint8_t KEY_IO(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
     }
     else return KEY_ON;
 }
+
+//TimingFIFO_KeyScan();
+//5ms执行一次
 void TimingFIFO_KeyScan(void)			/*KEY_FIFO_SCAN*/
 {
 	if (KeyFIFOTime < KEY_FIFO_TIME)
@@ -298,3 +293,4 @@ void TimingFIFO_KeyScan(void)			/*KEY_FIFO_SCAN*/
 		KEY_Scan();
 	}
 }
+#endif  //USE_KEY
