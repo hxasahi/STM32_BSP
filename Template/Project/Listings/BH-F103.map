@@ -131,6 +131,23 @@ Section Cross References
     bsp_key.o(i.KEY_SetParam) refers to bsp_key.o(.bss) for s_tBtn
     bsp_key.o(i.TimingFIFO_KeyScan) refers to bsp_key.o(i.KEY_Scan) for KEY_Scan
     bsp_key.o(i.TimingFIFO_KeyScan) refers to bsp_key.o(.data) for KeyFIFOTime
+    bsp_usart.o(i.NVIC_Configuration) refers to misc.o(i.NVIC_PriorityGroupConfig) for NVIC_PriorityGroupConfig
+    bsp_usart.o(i.NVIC_Configuration) refers to misc.o(i.NVIC_Init) for NVIC_Init
+    bsp_usart.o(i.USART_Config) refers to stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    bsp_usart.o(i.USART_Config) refers to stm32f10x_gpio.o(i.GPIO_Init) for GPIO_Init
+    bsp_usart.o(i.USART_Config) refers to stm32f10x_usart.o(i.USART_Init) for USART_Init
+    bsp_usart.o(i.USART_Config) refers to bsp_usart.o(i.NVIC_Configuration) for NVIC_Configuration
+    bsp_usart.o(i.USART_Config) refers to stm32f10x_usart.o(i.USART_ITConfig) for USART_ITConfig
+    bsp_usart.o(i.USART_Config) refers to stm32f10x_usart.o(i.USART_Cmd) for USART_Cmd
+    bsp_usart.o(i.USART_Config) refers to stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
+    bsp_usart.o(i.USART_SendArray) refers to bsp_usart.o(i.USART_SendByte) for USART_SendByte
+    bsp_usart.o(i.USART_SendArray) refers to stm32f10x_usart.o(i.USART_GetFlagStatus) for USART_GetFlagStatus
+    bsp_usart.o(i.USART_SendByte) refers to stm32f10x_usart.o(i.USART_SendData) for USART_SendData
+    bsp_usart.o(i.USART_SendByte) refers to stm32f10x_usart.o(i.USART_GetFlagStatus) for USART_GetFlagStatus
+    bsp_usart.o(i.USART_SendHalfWord) refers to stm32f10x_usart.o(i.USART_SendData) for USART_SendData
+    bsp_usart.o(i.USART_SendHalfWord) refers to stm32f10x_usart.o(i.USART_GetFlagStatus) for USART_GetFlagStatus
+    bsp_usart.o(i.USART_SendString) refers to bsp_usart.o(i.USART_SendByte) for USART_SendByte
+    bsp_usart.o(i.USART_SendString) refers to stm32f10x_usart.o(i.USART_GetFlagStatus) for USART_GetFlagStatus
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
@@ -873,6 +890,12 @@ Removing Unused input sections from the image.
     Removing bsp_key.o(i.KEY_GetState), (16 bytes).
     Removing bsp_key.o(i.KEY_IO), (40 bytes).
     Removing bsp_key.o(i.KEY_SetParam), (36 bytes).
+    Removing bsp_usart.o(i.NVIC_Configuration), (80 bytes).
+    Removing bsp_usart.o(i.USART_Config), (408 bytes).
+    Removing bsp_usart.o(i.USART_SendArray), (48 bytes).
+    Removing bsp_usart.o(i.USART_SendByte), (30 bytes).
+    Removing bsp_usart.o(i.USART_SendHalfWord), (60 bytes).
+    Removing bsp_usart.o(i.USART_SendString), (42 bytes).
     Removing dadd.o(.text), (334 bytes).
     Removing dmul.o(.text), (228 bytes).
     Removing ddiv.o(.text), (222 bytes).
@@ -880,7 +903,7 @@ Removing Unused input sections from the image.
     Removing cdrcmple.o(.text), (48 bytes).
     Removing depilogue.o(.text), (186 bytes).
 
-480 unused section(s) (total 20290 bytes) removed from the image.
+486 unused section(s) (total 20958 bytes) removed from the image.
 
 ==============================================================================
 
@@ -892,19 +915,19 @@ Image Symbol Table
 
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
@@ -929,6 +952,7 @@ Image Symbol Table
     ..\BSP\DEBUG\bsp_debug.c                 0x00000000   Number         0  bsp_debug.o ABSOLUTE
     ..\BSP\Key\bsp_key.c                     0x00000000   Number         0  bsp_key.o ABSOLUTE
     ..\BSP\Systick\bsp_SysTick.c             0x00000000   Number         0  bsp_systick.o ABSOLUTE
+    ..\BSP\USART\bsp_usart.c                 0x00000000   Number         0  bsp_usart.o ABSOLUTE
     ..\BSP\delay\bsp_delay.c                 0x00000000   Number         0  bsp_delay.o ABSOLUTE
     ..\Libraries\CMSIS\core_cm3.c            0x00000000   Number         0  core_cm3.o ABSOLUTE
     ..\Libraries\CMSIS\startup\startup_stm32f10x_hd.s 0x00000000   Number         0  startup_stm32f10x_hd.o ABSOLUTE
@@ -1190,17 +1214,17 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000130   Data   RO            3    RESET               startup_stm32f10x_hd.o
-    0x08000130   0x08000130   0x00000000   Code   RO         3379  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000130   0x08000130   0x00000004   Code   RO         3642    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08000134   0x08000134   0x00000004   Code   RO         3645    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000138   0x08000138   0x00000000   Code   RO         3647    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000138   0x08000138   0x00000000   Code   RO         3649    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000138   0x08000138   0x00000008   Code   RO         3650    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000140   0x08000140   0x00000000   Code   RO         3652    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000140   0x08000140   0x00000000   Code   RO         3654    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000140   0x08000140   0x00000004   Code   RO         3643    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000130   0x08000130   0x00000000   Code   RO         3423  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000130   0x08000130   0x00000004   Code   RO         3686    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000134   0x08000134   0x00000004   Code   RO         3689    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000138   0x08000138   0x00000000   Code   RO         3691    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000138   0x08000138   0x00000000   Code   RO         3693    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000138   0x08000138   0x00000008   Code   RO         3694    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000140   0x08000140   0x00000000   Code   RO         3696    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000140   0x08000140   0x00000000   Code   RO         3698    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000140   0x08000140   0x00000004   Code   RO         3687    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x08000144   0x08000144   0x00000024   Code   RO            4    .text               startup_stm32f10x_hd.o
-    0x08000168   0x08000168   0x00000024   Code   RO         3672    .text               mc_w.l(init.o)
+    0x08000168   0x08000168   0x00000024   Code   RO         3716    .text               mc_w.l(init.o)
     0x0800018c   0x0800018c   0x00000004   Code   RO         3136    i.BusFault_Handler  stm32f10x_it.o
     0x08000190   0x08000190   0x00000090   Code   RO         3202    i.DEBUG_Config      bsp_debug.o
     0x08000220   0x08000220   0x00000002   Code   RO         3137    i.DebugMon_Handler  stm32f10x_it.o
@@ -1242,14 +1266,14 @@ Memory Map of the image
     0x080009d4   0x080009d4   0x000000d8   Code   RO         2885    i.USART_Init        stm32f10x_usart.o
     0x08000aac   0x08000aac   0x00000008   Code   RO         2895    i.USART_SendData    stm32f10x_usart.o
     0x08000ab4   0x08000ab4   0x00000004   Code   RO         3144    i.UsageFault_Handler  stm32f10x_it.o
-    0x08000ab8   0x08000ab8   0x00000010   Code   RO         3383    i.__0printf$bare    mc_w.l(printfb.o)
-    0x08000ac8   0x08000ac8   0x0000000e   Code   RO         3684    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08000ad6   0x08000ad6   0x00000002   Code   RO         3685    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08000ad8   0x08000ad8   0x0000000e   Code   RO         3686    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08000ae6   0x08000ae6   0x00000022   Code   RO         3390    i._printf_core      mc_w.l(printfb.o)
+    0x08000ab8   0x08000ab8   0x00000010   Code   RO         3427    i.__0printf$bare    mc_w.l(printfb.o)
+    0x08000ac8   0x08000ac8   0x0000000e   Code   RO         3728    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08000ad6   0x08000ad6   0x00000002   Code   RO         3729    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08000ad8   0x08000ad8   0x0000000e   Code   RO         3730    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08000ae6   0x08000ae6   0x00000022   Code   RO         3434    i._printf_core      mc_w.l(printfb.o)
     0x08000b08   0x08000b08   0x00000024   Code   RO         3209    i.fputc             bsp_debug.o
     0x08000b2c   0x08000b2c   0x0000008c   Code   RO         3108    i.main              main.o
-    0x08000bb8   0x08000bb8   0x00000020   Data   RO         3682    Region$$Table       anon$$obj.o
+    0x08000bb8   0x08000bb8   0x00000020   Data   RO         3726    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000bd8, Size: 0x00000478, Max: 0x00010000, ABSOLUTE)
@@ -1262,7 +1286,7 @@ Memory Map of the image
     0x2000002c   0x08000c04   0x00000004   Data   RW         3257    .data               bsp_delay.o
     0x20000030   0x08000c08   0x00000002   Data   RW         3306    .data               bsp_key.o
     0x20000032   0x08000c0a   0x00000002   PAD
-    0x20000034   0x08000c0c   0x00000004   Data   RW         3656    .data               mc_w.l(stdout.o)
+    0x20000034   0x08000c0c   0x00000004   Data   RW         3700    .data               mc_w.l(stdout.o)
     0x20000038        -       0x0000003c   Zero   RW         3305    .bss                bsp_key.o
     0x20000074   0x08000c10   0x00000004   PAD
     0x20000078        -       0x00000400   Zero   RW            1    STACK               startup_stm32f10x_hd.o
