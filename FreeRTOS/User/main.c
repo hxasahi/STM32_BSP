@@ -3,37 +3,55 @@
 #include "bsp_key.h"
 #include "FreeRTOS.h"
 #include "task.h"
+static void AppTaskCreate(void* arg);
 static void Key_Task(void* parameter);
 static void Test_Task(void* parameter);
+static TaskHandle_t AppTaskCreateHandle = NULL;
 static TaskHandle_t Key_Task_Handle = NULL;
 static TaskHandle_t Test_Task_Handle = NULL;
 int main(void)
 {		
-	BaseType_t xReturn1 = pdPASS;
-	BaseType_t xReturn2 = pdPASS;
+	BaseType_t xReturn = pdPASS;	
 	DEBUG_Config();		
 #if USE_KEY	
 	KEY_Init();	
 #endif  //USE_KEY	
-	printf("key\r\n");
-	xReturn1 = xTaskCreate((TaskFunction_t)Key_Task,
+	printf("FreeRTOS\r\n");
+	xReturn = xTaskCreate((TaskFunction_t)AppTaskCreate,
+							(const char*)"AppTaskCreate",
+							(uint16_t)512,
+							(void*)NULL,
+							(UBaseType_t)1,
+							(TaskHandle_t*)&AppTaskCreateHandle);
+							
+	if(pdPASS == xReturn)
+		vTaskStartScheduler();
+	else
+		return -1;
+	while(1);
+}
+static void AppTaskCreate(void* arg)
+{
+	BaseType_t xReturn = pdPASS;
+	taskENTER_CRITICAL();
+	xReturn = xTaskCreate((TaskFunction_t)Key_Task,
 							(const char*)"KeyTask",
 							(uint16_t)512,
 							(void*)NULL,
 							(UBaseType_t)1,
 							(TaskHandle_t*)&Key_Task_Handle);
-							
-	xReturn2 = xTaskCreate((TaskFunction_t)Test_Task,
+	if(xReturn == pdPASS)
+		printf("创建Key_Task成功\r\n");
+	xReturn = xTaskCreate((TaskFunction_t)Test_Task,
 							(const char*)"TestTask",
 							(uint16_t)512,
 							(void*)NULL,
 							(UBaseType_t)1,
-							(TaskHandle_t*)&Test_Task_Handle);
-	if(pdPASS == xReturn1 && pdPASS == xReturn2)
-		vTaskStartScheduler();
-	else
-		return -1;
-	while(1);
+							(TaskHandle_t*)&Test_Task_Handle);	
+	if(xReturn == pdPASS)
+		printf("创建Test_Task成功\r\n");
+	vTaskDelete(AppTaskCreateHandle);
+	taskEXIT_CRITICAL();
 }
 static void Key_Task(void* parameter)
 {
