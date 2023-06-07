@@ -143,7 +143,7 @@ void DebugMon_Handler(void)
 void SysTick_Handler(void)
 {
 #if USE_KEY
-    if (time5ms < 500 - 1)     //5*100*10us = 5ms
+    if (time5ms < 5 - 1)     //5*100*10us = 5ms
     {
         time5ms++;
     }
@@ -153,13 +153,13 @@ void SysTick_Handler(void)
         TimingFIFO_KeyScan();
     }
 #endif  //USE_KEY
-    if (time1ms < 100 - 1)     //1*100*10us = 1ms
-    {
-        time1ms++;
-    }
-    else                      //1ms
-    {
-        time1ms = 0;
+//    if (time1ms < 100 - 1)     //1*100*10us = 1ms
+//    {
+//        time1ms++;
+//    }
+//    else                      //1ms
+//    {
+//        time1ms = 0;
 #if (INCLUDE_xTaskGetSchedulerState == 1)
         if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED)
         {
@@ -168,7 +168,7 @@ void SysTick_Handler(void)
 #if (INCLUDE_xTaskGetSchedulerState == 1)
         }
 #endif  /* INCLUDE_xTaskGetSchedulerState */
-    }
+//    }
 }
 
 /******************************************************************************/

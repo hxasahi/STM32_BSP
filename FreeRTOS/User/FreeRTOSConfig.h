@@ -138,7 +138,7 @@
 #define configCPU_CLOCK_HZ						  (SystemCoreClock)
 
 //RTOS系统节拍中断的频率。即一秒中断的次数，每次中断RTOS都会进行任务调度
-#define configTICK_RATE_HZ						  (( TickType_t )100000)
+#define configTICK_RATE_HZ						  (( TickType_t )1000)
 
 //可使用的最大优先级
 #define configMAX_PRIORITIES					  (32)
