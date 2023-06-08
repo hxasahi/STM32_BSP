@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User;..\BSP\DEBUG;..\BSP\Systick;..\BSP\delay;..\BSP\Key;..\BSP\USART;..\FreeRTOS\include;..\FreeRTOS\port\RVDS\ARM_CM3;..\BSP\dht11;..\BSP\dwt_delay</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User;..\BSP\DEBUG;..\BSP\Systick;..\BSP\delay;..\BSP\Key;..\BSP\USART;..\FreeRTOS\include;..\FreeRTOS\port\RVDS\ARM_CM3;..\BSP\dht11;..\BSP\dwt_delay;..\BSP\adc;..\BSP\GPIO;..\BSP\color_led</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -569,6 +569,21 @@
               <FileName>core_delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\dwt_delay\core_delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\adc\bsp_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\GPIO\bsp_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_color_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\color_led\bsp_color_led.c</FilePath>
             </File>
           </Files>
         </Group>

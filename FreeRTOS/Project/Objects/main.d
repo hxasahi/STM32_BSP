@@ -44,3 +44,6 @@
 .\objects\main.o: ..\BSP\delay\bsp_delay.h
 .\objects\main.o: ..\BSP\dht11\bsp_dht11.h
 .\objects\main.o: ..\BSP\dwt_delay\core_delay.h
+.\objects\main.o: ..\BSP\adc\bsp_adc.h
+.\objects\main.o: ..\BSP\GPIO\bsp_gpio.h
+.\objects\main.o: ..\BSP\color_led\bsp_color_led.h
