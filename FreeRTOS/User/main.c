@@ -85,7 +85,7 @@ static void Key_Task(void *parameter)
                     ;
             }
         }
-        vTaskDelay(20);
+        //vTaskDelay(20);
 #endif  //USE_KEY       
     }
 }
@@ -94,11 +94,11 @@ static void Test_Task(void *parameter)
     DHT11_Data_TypeDef DHT11_Data;
     while (1)
     {
-        printf("1\r\n");
-        CPU_TS_Tmr_Delay_US(1000);
+        printf("1\r\n");        
+		vTaskSuspendAll();		
         /*调用DHT11_Read_TempAndHumidity读取温湿度，若成功则输出该信息*/
         if (DHT11_Read_TempAndHumidity(& DHT11_Data) == SUCCESS)
-        {
+        {			
             printf("\r\n读取DHT11成功!\r\n\r\n湿度为%d.%d ％RH ，温度为 %d.%d℃ \r\n", \
                    DHT11_Data.humi_int, DHT11_Data.humi_deci, DHT11_Data.temp_int, DHT11_Data.temp_deci);
         }
@@ -106,6 +106,7 @@ static void Test_Task(void *parameter)
         {
             printf("Read DHT11 ERROR!\r\n");
         }
+		xTaskResumeAll();
         vTaskDelay(2000);
     }
 }
