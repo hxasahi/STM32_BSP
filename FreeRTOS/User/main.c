@@ -1,6 +1,7 @@
 #include "stm32f10x.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "queue.h"
 #include "bsp_debug.h"
 #include "bsp_key.h"
 #include "bsp_delay.h"
@@ -15,11 +16,16 @@ static void Key_Task(void *parameter);
 static void Test_Task(void *parameter);
 static void ADC_Task(void *arg);
 static void LED_Task(void *arg);
+static void DEBUG_Task(void *arg);
 static TaskHandle_t AppTaskCreateHandle = NULL;
 static TaskHandle_t Key_Task_Handle = NULL;
 static TaskHandle_t Test_Task_Handle = NULL;
 static TaskHandle_t ADC_Task_Handle = NULL;
 static TaskHandle_t LED_Task_Handle = NULL;
+static TaskHandle_t DEBUG_Task_Handle = NULL;
+QueueHandle_t Test_Queue = NULL;
+#define QUEUE_LEN 4
+#define QUEUE_SIZE 1
 int main(void)
 {
     BaseType_t xReturn = pdPASS;
@@ -49,6 +55,11 @@ static void AppTaskCreate(void *arg)
 {
     BaseType_t xReturn = pdPASS;
     taskENTER_CRITICAL();
+	Test_Queue = xQueueCreate((UBaseType_t)QUEUE_LEN,
+							  (UBaseType_t)QUEUE_SIZE);
+	if(Test_Queue != NULL)
+		printf("创建Test_Queue消息队列成功\r\n");
+	
     xReturn = xTaskCreate((TaskFunction_t)Key_Task,
                           (const char *)"KeyTask",
                           (uint16_t)512,
@@ -81,6 +92,14 @@ static void AppTaskCreate(void *arg)
 						  (TaskHandle_t *)&LED_Task_Handle);
 	if(xReturn == pdPASS)
 		printf("创建LED_Task成功\r\n");
+	xReturn = xTaskCreate((TaskFunction_t)DEBUG_Task,
+						  (const char *)"DEBUGTask",
+					      (uint16_t)512,
+						  (void *)NULL,
+						  (UBaseType_t)1,
+						  (TaskHandle_t *)&DEBUG_Task_Handle);
+	if(xReturn == pdPASS)
+		printf("创建DEBUG_Task成功\r\n");
     vTaskDelete(AppTaskCreateHandle);
     taskEXIT_CRITICAL();
 }
@@ -118,21 +137,33 @@ static void Key_Task(void *parameter)
 static void Test_Task(void *parameter)
 {
     DHT11_Data_TypeDef DHT11_Data;
+	BaseType_t xReturn = pdPASS;
     while (1)
-    {
-        printf("1\r\n");        
+    {             
 		vTaskSuspendAll();		
         /*调用DHT11_Read_TempAndHumidity读取温湿度，若成功则输出该信息*/
         if (DHT11_Read_TempAndHumidity(& DHT11_Data) == SUCCESS)
-        {			
-            printf("\r\n读取DHT11成功!\r\n\r\n湿度为%d.%d ％RH ，温度为 %d.%d℃ \r\n", \
+        {	
+		xTaskResumeAll();			
+            //printf("\r\n读取DHT11成功!\r\n\r\n湿度为%d.%d ％RH ，温度为 %d.%d℃ \r\n", \
                    DHT11_Data.humi_int, DHT11_Data.humi_deci, DHT11_Data.temp_int, DHT11_Data.temp_deci);
+			xReturn = xQueueSend(Test_Queue,
+								 &DHT11_Data.humi_int,
+								 0);
+//			if(xReturn == pdPASS)
+//				printf("湿度发送成功\r\n");
+			
+			xReturn = xQueueSend(Test_Queue,
+								 &DHT11_Data.temp_int,
+								 0);
+//			if(xReturn == pdPASS)
+//				printf("温度发送成功\r\n");
         }
         else
         {
             printf("Read DHT11 ERROR!\r\n");
         }
-		xTaskResumeAll();
+
         vTaskDelay(2000);
     }
 }
@@ -144,8 +175,8 @@ static void ADC_Task(void *arg)
 	{		
 		ADC_ConvertedValueLocal =(float) ADC_ConvertedValue/4096*3.3; // 读取转换的AD值
 	
-		printf("\r\n The current AD value = 0x%04X \r\n", ADC_ConvertedValue); 
-		printf("\r\n The current AD value = %f V \r\n",ADC_ConvertedValueLocal); 		
+		//printf("\r\n The current AD value = 0x%04X \r\n", ADC_ConvertedValue); 
+		//printf("\r\n The current AD value = %f V \r\n",ADC_ConvertedValueLocal); 		
 		vTaskDelay(1000);
 	}
 }
@@ -172,3 +203,19 @@ static void LED_Task(void *arg)
 			flag = 0;
 	}
 }
+static void DEBUG_Task(void *arg)
+{
+	BaseType_t xReturn = pdTRUE;
+	uint32_t r_queue;
+	while(1)
+	{
+		xReturn = xQueueReceive(Test_Queue,
+								&r_queue,
+								portMAX_DELAY);
+		if(xReturn == pdTRUE)		
+			printf("DEBUG: %d \r\n",r_queue);		
+		else
+			printf("数据接收出错 0x%lx\r\n",xReturn);
+	}
+}
+

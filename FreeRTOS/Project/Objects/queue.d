@@ -34,12 +34,7 @@
 .\objects\queue.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\queue.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\queue.o: ..\BSP\DEBUG\bsp_debug.h
-.\objects\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\queue.o: ..\FreeRTOS\include\projdefs.h
-.\objects\queue.o: ..\FreeRTOS\include\portable.h
-.\objects\queue.o: ..\FreeRTOS\include\deprecated_definitions.h
-.\objects\queue.o: ..\FreeRTOS\port\RVDS\ARM_CM3\portmacro.h
-.\objects\queue.o: ..\FreeRTOS\include\mpu_wrappers.h
+.\objects\queue.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\queue.o: ..\FreeRTOS\include\task.h
 .\objects\queue.o: ..\FreeRTOS\include\list.h
-.\objects\queue.o: ..\FreeRTOS\include\queue.h
+.\objects\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

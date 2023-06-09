@@ -3,6 +3,8 @@
 #define USE_DEBUG  1
 #if USE_DEBUG
 #include "stm32f10x.h"
+#include "FreeRTOS.h"
+#include "task.h"
 #include <stdio.h>
 
 #define DEBUG_USART  1

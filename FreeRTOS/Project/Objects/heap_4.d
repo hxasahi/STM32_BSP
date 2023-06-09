@@ -33,11 +33,7 @@
 .\objects\heap_4.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\heap_4.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\heap_4.o: ..\BSP\DEBUG\bsp_debug.h
-.\objects\heap_4.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\heap_4.o: ..\FreeRTOS\include\projdefs.h
-.\objects\heap_4.o: ..\FreeRTOS\include\portable.h
-.\objects\heap_4.o: ..\FreeRTOS\include\deprecated_definitions.h
-.\objects\heap_4.o: ..\FreeRTOS\port\RVDS\ARM_CM3\portmacro.h
-.\objects\heap_4.o: ..\FreeRTOS\include\mpu_wrappers.h
+.\objects\heap_4.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\heap_4.o: ..\FreeRTOS\include\task.h
 .\objects\heap_4.o: ..\FreeRTOS\include\list.h
+.\objects\heap_4.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
