@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="clion_fw"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clion_fw.elf">
+				<Option output="E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/clion_fw.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_STDPERIPH_DRIVER"/>
+					<Add option="-DSTM32F10X_HD"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/User"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/Libraries/CMSIS"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/DEBUG"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/delay"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/GPIO"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/Key"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/Systick"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/USART"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clion_fw.elf"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clion_fw.elf/fast">
+				<Option output="E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/clion_fw.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_STDPERIPH_DRIVER"/>
+					<Add option="-DSTM32F10X_HD"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/User"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/Libraries/CMSIS"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/DEBUG"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/delay"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/GPIO"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/Key"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/Systick"/>
+					<Add directory="E:/project/STM32_BSP/clion/clion_fw/BSP/USART"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\gcc-arm\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clion_fw.elf/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/project/STM32_BSP/clion/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/DEBUG/bsp_debug.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/DEBUG/bsp_debug.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/GPIO/bsp_gpio.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/GPIO/bsp_gpio.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/Key/bsp_key.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/Key/bsp_key.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/Systick/bsp_SysTick.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/Systick/bsp_SysTick.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/USART/bsp_usart.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/USART/bsp_usart.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/delay/bsp_delay.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/BSP/delay/bsp_delay.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/CMSIS/core_cm3.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/CMSIS/core_cm3.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/CMSIS/startup/startup_stm32f10x_hd.s">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/CMSIS/stm32f10x.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/CMSIS/system_stm32f10x.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/CMSIS/system_stm32f10x.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_adc.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_bkp.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_can.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_cec.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_crc.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dac.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dbgmcu.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dma.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_exti.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_flash.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_fsmc.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_i2c.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_iwdg.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_pwr.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rtc.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_sdio.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_spi.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_tim.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_wwdg.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/STM32F103VETX_FLASH.ld">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/User/main.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/User/stm32f10x_conf.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/User/stm32f10x_it.c">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/User/stm32f10x_it.h">
+			<Option target="clion_fw.elf"/>
+		</Unit>
+		<Unit filename="E:/project/STM32_BSP/clion/clion_fw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

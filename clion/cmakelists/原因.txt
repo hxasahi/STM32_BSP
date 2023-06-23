@@ -1,0 +1,4 @@
+标准库添加此语句
+add_link_options(-specs=nano.specs -specs=nosys.specs -u _printf_float)、
+
+HAL库不需要添加此语句
