@@ -1,0 +1,207 @@
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple LLVM version)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+Fatal error: C3900U: Unrecognized option '-V'.
+Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+]+oneAPI)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+Fatal error: C3900U: Unrecognized option '-V'.
+Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+Fatal error: C3900U: Unrecognized option '-qversion'.
+Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+Fatal error: C3900U: Unrecognized option '-?'.
+Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+Product: MDK Plus 5.26
+Component: ARM Compiler 5.06 update 6 (build 750)
+Tool: armcc [4d3637]
+For support see http://www.arm.com/support
+Software supplied by: ARM Limited
+
+Usage:         armcc [options] file1 file2 ... filen
+Main options:
+        
+--arm          Generate ARM code
+--thumb        Generate Thumb code
+--c90          Switch to C mode (default for .c files)
+--cpp          Switch to C++ mode (default for .cpp files)
+-O0            Minimum optimization
+-O1            Restricted optimization for debugging
+-O2            High optimization
+-O3            Maximum optimization
+-Ospace        Optimize for codesize
+-Otime         Optimize for maximum performance
+--cpu <cpu>    Select CPU to generate code for
+--cpu list     Output a list of all the selectable CPUs
+-o <file>      Name the final output file of the compilation
+-c             Compile only, do not link
+--asm          Output assembly code as well as object code
+-S             Output assembly code instead of object code
+--interleave   Interleave source with disassembly (use with --asm or -S)
+-E             Preprocess the C source code only
+-D<symbol>     Define <symbol> on entry to the compiler
+-g             Generate tables for high-level debugging
+-I<directory>  Include <directory> on the #include search path
+Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+Product: MDK Plus 5.26
+Component: ARM Compiler 5.06 update 6 (build 750)
+Tool: armcc [4d3637]
+For support see http://www.arm.com/support
+Software supplied by: ARM Limited
+
+Usage:         armcc [options] file1 file2 ... filen
+Main options:
+        
+--arm          Generate ARM code
+--thumb        Generate Thumb code
+--c90          Switch to C mode (default for .c files)
+--cpp          Switch to C++ mode (default for .cpp files)
+-O0            Minimum optimization
+-O1            Restricted optimization for debugging
+-O2            High optimization
+-O3            Maximum optimization
+-Ospace        Optimize for codesize
+-Otime         Optimize for maximum performance
+--cpu <cpu>    Select CPU to generate code for
+--cpu list     Output a list of all the selectable CPUs
+-o <file>      Name the final output file of the compilation
+-c             Compile only, do not link
+--asm          Output assembly code as well as object code
+-S             Output assembly code instead of object code
+--interleave   Interleave source with disassembly (use with --asm or -S)
+-E             Preprocess the C source code only
+-D<symbol>     Define <symbol> on entry to the compiler
+-g             Generate tables for high-level debugging
+-I<directory>  Include <directory> on the #include search path
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5uq7fa
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_e7ee0/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e7ee0.dir\build.make CMakeFiles/cmTC_e7ee0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5uq7fa'
+Building C object CMakeFiles/cmTC_e7ee0.dir/CMakeCCompilerABI.o
+D:\Keil_v5\ARM\ARMCC\bin\armcc.exe   --cpu=Cortex-M3  --c99  -o CMakeFiles\cmTC_e7ee0.dir\CMakeCCompilerABI.o -c "D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTC_e7ee0.elf
+"D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e7ee0.dir\link.txt --verbose=1
+D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe CMakeFiles/cmTC_e7ee0.dir/CMakeCCompilerABI.o -o cmTC_e7ee0.elf --list cmTC_e7ee0.map
+D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe: unrecognized option '--list'
+D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe: use the --help option for usage information
+CMakeFiles\cmTC_e7ee0.dir\build.make:97: recipe for target 'cmTC_e7ee0.elf' failed
+mingw32-make.exe[1]: *** [cmTC_e7ee0.elf] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5uq7fa'
+Makefile:126: recipe for target 'cmTC_e7ee0/fast' failed
+mingw32-make.exe: *** [cmTC_e7ee0/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d8nvgi
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a983c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a983c.dir\build.make CMakeFiles/cmTC_a983c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d8nvgi'
+Building C object CMakeFiles/cmTC_a983c.dir/testCCompiler.o
+D:\Keil_v5\ARM\ARMCC\bin\armcc.exe   --cpu=Cortex-M3  --c99  -o CMakeFiles\cmTC_a983c.dir\testCCompiler.o -c C:\Users\Asahi\Desktop\std\clion_fw\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-d8nvgi\testCCompiler.c
+Linking C executable cmTC_a983c.elf
+"D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a983c.dir\link.txt --verbose=1
+D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe CMakeFiles/cmTC_a983c.dir/testCCompiler.o -o cmTC_a983c.elf --list cmTC_a983c.map
+D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe: unrecognized option '--list'
+D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe: use the --help option for usage information
+CMakeFiles\cmTC_a983c.dir\build.make:97: recipe for target 'cmTC_a983c.elf' failed
+mingw32-make.exe[1]: *** [cmTC_a983c.elf] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d8nvgi'
+Makefile:126: recipe for target 'cmTC_a983c/fast' failed
+mingw32-make.exe: *** [cmTC_a983c/fast] Error 2
+
+
+
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple LLVM version)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+Fatal error: C3900U: Unrecognized option '-V'.
+Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+]+oneAPI)":
+Fatal error: C3900U: Unrecognized option '--version'.
+Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+Fatal error: C3900U: Unrecognized option '-V'.
+Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+Fatal error: C3900U: Unrecognized option '-qversion'.
+Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+Fatal error: C3900U: Unrecognized option '-?'.
+Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+Product: MDK Plus 5.26
+Component: ARM Compiler 5.06 update 6 (build 750)
+Tool: armcc [4d3637]
+For support see http://www.arm.com/support
+Software supplied by: ARM Limited
+
+Usage:         armcc [options] file1 file2 ... filen
+Main options:
+        
+--arm          Generate ARM code
+--thumb        Generate Thumb code
+--c90          Switch to C mode (default for .c files)
+--cpp          Switch to C++ mode (default for .cpp files)
+-O0            Minimum optimization
+-O1            Restricted optimization for debugging
+-O2            High optimization
+-O3            Maximum optimization
+-Ospace        Optimize for codesize
+-Otime         Optimize for maximum performance
+--cpu <cpu>    Select CPU to generate code for
+--cpu list     Output a list of all the selectable CPUs
+-o <file>      Name the final output file of the compilation
+-c             Compile only, do not link
+--asm          Output assembly code as well as object code
+-S             Output assembly code instead of object code
+--interleave   Interleave source with disassembly (use with --asm or -S)
+-E             Preprocess the C source code only
+-D<symbol>     Define <symbol> on entry to the compiler
+-g             Generate tables for high-level debugging
+-I<directory>  Include <directory> on the #include search path
+Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+Product: MDK Plus 5.26
+Component: ARM Compiler 5.06 update 6 (build 750)
+Tool: armcc [4d3637]
+For support see http://www.arm.com/support
+Software supplied by: ARM Limited
+
+Usage:         armcc [options] file1 file2 ... filen
+Main options:
+        
+--arm          Generate ARM code
+--thumb        Generate Thumb code
+--c90          Switch to C mode (default for .c files)
+--cpp          Switch to C++ mode (default for .cpp files)
+-O0            Minimum optimization
+-O1            Restricted optimization for debugging
+-O2            High optimization
+-O3            Maximum optimization
+-Ospace        Optimize for codesize
+-Otime         Optimize for maximum performance
+--cpu <cpu>    Select CPU to generate code for
+--cpu list     Output a list of all the selectable CPUs
+-o <file>      Name the final output file of the compilation
+-c             Compile only, do not link
+--asm          Output assembly code as well as object code
+-S             Output assembly code instead of object code
+--interleave   Interleave source with disassembly (use with --asm or -S)
+-E             Preprocess the C source code only
+-D<symbol>     Define <symbol> on entry to the compiler
+-g             Generate tables for high-level debugging
+-I<directory>  Include <directory> on the #include search path
