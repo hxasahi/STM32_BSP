@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FreeRTOS"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FreeRTOS">
+				<Option output="C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/FreeRTOS.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_STDPERIPH_DRIVER"/>
+					<Add option="-DSTM32F10X_HD"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/adc"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/color_led"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/DEBUG"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/delay"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/dht11"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/dwt_delay"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/GPIO"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/Key"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/include"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/port/RVDS/ARM_CM3"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/CMSIS"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/User"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 FreeRTOS"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FreeRTOS/fast">
+				<Option output="C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/FreeRTOS.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_STDPERIPH_DRIVER"/>
+					<Add option="-DSTM32F10X_HD"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/adc"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/color_led"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/DEBUG"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/delay"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/dht11"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/dwt_delay"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/GPIO"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/BSP/Key"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/include"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/port/RVDS/ARM_CM3"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/CMSIS"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+					<Add directory="C:/Users/Asahi/Desktop/std/clion_fw/User"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 FreeRTOS/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Asahi/Desktop/std/clion_fw/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/DEBUG/bsp_debug.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/DEBUG/bsp_debug.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/GPIO/bsp_gpio.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/GPIO/bsp_gpio.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/Key/bsp_key.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/Key/bsp_key.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/adc/bsp_adc.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/adc/bsp_adc.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/color_led/bsp_color_led.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/color_led/bsp_color_led.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/delay/bsp_delay.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/delay/bsp_delay.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/dht11/bsp_dht11.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/dht11/bsp_dht11.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/dwt_delay/core_delay.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/BSP/dwt_delay/core_delay.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/port/MemMang/heap_4.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/port/RVDS/ARM_CM3/port.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/src/croutine.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/src/event_groups.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/src/list.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/src/queue.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/src/tasks.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/FreeRTOS/src/timers.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/CMSIS/core_cm3.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/CMSIS/core_cm3.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/CMSIS/startup/startup_stm32f10x_hd.s">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/CMSIS/system_stm32f10x.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/CMSIS/system_stm32f10x.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/User/main.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/User/stm32f10x_it.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/User/stm32f10x_it.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/std/clion_fw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
