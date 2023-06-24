@@ -1,0 +1,152 @@
+The target system is: Generic - 1 - 
+The host system is: Windows - 10.0.19045 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Keil_v5/ARM/ARMCC/bin/armcc.exe 
+Build flags: --cpu=Cortex-M3;--c99
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "__image.axf"
+
+The C compiler identification is ARMCC, found in "C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Keil_v5/ARM/ARMCC/bin/armcc.exe 
+Build flags: --cpu=Cortex-M3;;--cpp11
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "__image.axf"
+
+The CXX compiler identification is ARMCC, found in "C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is ARMCC using "" matched "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+Product: MDK Plus 5.26
+Component: ARM Compiler 5.06 update 6 (build 750)
+Tool: armcc [4d3637]
+For support see http://www.arm.com/support
+Software supplied by: ARM Limited
+
+Usage:         armcc [options] file1 file2 ... filen
+Main options:
+        
+--arm          Generate ARM code
+--thumb        Generate Thumb code
+--c90          Switch to C mode (default for .c files)
+--cpp          Switch to C++ mode (default for .cpp files)
+-O0            Minimum optimization
+-O1            Restricted optimization for debugging
+-O2            High optimization
+-O3            Maximum optimization
+-Ospace        Optimize for codesize
+-Otime         Optimize for maximum performance
+--cpu <cpu>    Select CPU to generate code for
+--cpu list     Output a list of all the selectable CPUs
+-o <file>      Name the final output file of the compilation
+-c             Compile only, do not link
+--asm          Output assembly code as well as object code
+-S             Output assembly code instead of object code
+--interleave   Interleave source with disassembly (use with --asm or -S)
+-E             Preprocess the C source code only
+-D<symbol>     Define <symbol> on entry to the compiler
+-g             Generate tables for high-level debugging
+-I<directory>  Include <directory> on the #include search path
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Keil_v5/ARM/ARMCC/bin/armcc.exe 
+Build flags: --cpu=Cortex-M3;--c99
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "__image.axf"
+
+The C compiler identification is ARMCC, found in "C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Keil_v5/ARM/ARMCC/bin/armcc.exe 
+Build flags: --cpu=Cortex-M3;;--cpp11
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "__image.axf"
+
+The CXX compiler identification is ARMCC, found in "C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is ARMCC using "" matched "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+Product: MDK Plus 5.26
+Component: ARM Compiler 5.06 update 6 (build 750)
+Tool: armcc [4d3637]
+For support see http://www.arm.com/support
+Software supplied by: ARM Limited
+
+Usage:         armcc [options] file1 file2 ... filen
+Main options:
+        
+--arm          Generate ARM code
+--thumb        Generate Thumb code
+--c90          Switch to C mode (default for .c files)
+--cpp          Switch to C++ mode (default for .cpp files)
+-O0            Minimum optimization
+-O1            Restricted optimization for debugging
+-O2            High optimization
+-O3            Maximum optimization
+-Ospace        Optimize for codesize
+-Otime         Optimize for maximum performance
+--cpu <cpu>    Select CPU to generate code for
+--cpu list     Output a list of all the selectable CPUs
+-o <file>      Name the final output file of the compilation
+-c             Compile only, do not link
+--asm          Output assembly code as well as object code
+-S             Output assembly code instead of object code
+--interleave   Interleave source with disassembly (use with --asm or -S)
+-E             Preprocess the C source code only
+-D<symbol>     Define <symbol> on entry to the compiler
+-g             Generate tables for high-level debugging
+-I<directory>  Include <directory> on the #include search path
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ieupnx
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_6f151/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6f151.dir\build.make CMakeFiles/cmTC_6f151.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ieupnx'
+Building C object CMakeFiles/cmTC_6f151.dir/CMakeCCompilerABI.o
+D:\Keil_v5\ARM\ARMCC\bin\armcc.exe   --cpu=Cortex-M3 --c99  -o CMakeFiles\cmTC_6f151.dir\CMakeCCompilerABI.o -c "D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTC_6f151.elf
+"D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6f151.dir\link.txt --verbose=1
+D:\Keil_v5\ARM\ARMCC\bin\armlink.exe CMakeFiles/cmTC_6f151.dir/CMakeCCompilerABI.o -o cmTC_6f151.elf --list cmTC_6f151.map
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ieupnx'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pibfaf
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c1b38/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c1b38.dir\build.make CMakeFiles/cmTC_c1b38.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pibfaf'
+Building CXX object CMakeFiles/cmTC_c1b38.dir/CMakeCXXCompilerABI.o
+D:\Keil_v5\ARM\ARMCC\bin\armcc.exe   --cpu=Cortex-M3  --cpp11  -o CMakeFiles\cmTC_c1b38.dir\CMakeCXXCompilerABI.o -c "D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTC_c1b38.elf
+"D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c1b38.dir\link.txt --verbose=1
+D:\Keil_v5\ARM\ARMCC\bin\armlink.exe CMakeFiles/cmTC_c1b38.dir/CMakeCXXCompilerABI.o -o cmTC_c1b38.elf --list cmTC_c1b38.map
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pibfaf'
+
+
+
