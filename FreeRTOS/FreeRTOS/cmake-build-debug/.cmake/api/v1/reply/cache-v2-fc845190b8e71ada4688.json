@@ -739,7 +739,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "C:/MinGW/bin/mingw32-make.exe"
+			"value" : "D:/MinGW/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",

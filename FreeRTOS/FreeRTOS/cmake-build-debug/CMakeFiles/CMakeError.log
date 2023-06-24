@@ -82,43 +82,43 @@ Main options:
 -g             Generate tables for high-level debugging
 -I<directory>  Include <directory> on the #include search path
 Detecting C compiler ABI info failed to compile with the following output:
-Change Dir: C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sqhkf3
+Change Dir: C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g0s7iy
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_156c1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_156c1.dir\build.make CMakeFiles/cmTC_156c1.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sqhkf3'
-Building C object CMakeFiles/cmTC_156c1.dir/CMakeCCompilerABI.o
-D:\Keil_v5\ARM\ARMCC\bin\armcc.exe   --cpu=Cortex-M3 --c99  -o CMakeFiles\cmTC_156c1.dir\CMakeCCompilerABI.o -c "D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTC_156c1.elf
-"D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_156c1.dir\link.txt --verbose=1
-D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe CMakeFiles/cmTC_156c1.dir/CMakeCCompilerABI.o -o cmTC_156c1.elf --list cmTC_156c1.map
-D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe: unrecognized option '--list'
-D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe: use the --help option for usage information
-CMakeFiles\cmTC_156c1.dir\build.make:97: recipe for target 'cmTC_156c1.elf' failed
-mingw32-make.exe[1]: *** [cmTC_156c1.elf] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sqhkf3'
-Makefile:126: recipe for target 'cmTC_156c1/fast' failed
-mingw32-make.exe: *** [cmTC_156c1/fast] Error 2
+Run Build Command(s):D:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_5461c/fast && D:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5461c.dir\build.make CMakeFiles/cmTC_5461c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g0s7iy'
+Building C object CMakeFiles/cmTC_5461c.dir/CMakeCCompilerABI.o
+D:\Keil_v5\ARM\ARMCC\bin\armcc.exe   --cpu=Cortex-M3 --c99  -o CMakeFiles\cmTC_5461c.dir\CMakeCCompilerABI.o -c "D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTC_5461c.elf
+"D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5461c.dir\link.txt --verbose=1
+"D:\Program Files\JetBrains\CLion 2023.1.4\bin\mingw\bin\ld.exe" CMakeFiles/cmTC_5461c.dir/CMakeCCompilerABI.o -o cmTC_5461c.elf --list cmTC_5461c.map
+D:\Program Files\JetBrains\CLion 2023.1.4\bin\mingw\bin\ld.exe: unrecognized option '--list'
+D:\Program Files\JetBrains\CLion 2023.1.4\bin\mingw\bin\ld.exe: use the --help option for usage information
+CMakeFiles\cmTC_5461c.dir\build.make:97: recipe for target 'cmTC_5461c.elf' failed
+mingw32-make.exe[1]: *** [cmTC_5461c.elf] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g0s7iy'
+Makefile:126: recipe for target 'cmTC_5461c/fast' failed
+mingw32-make.exe: *** [cmTC_5461c/fast] Error 2
 
 
 
 
 Determining if the C compiler works failed with the following output:
-Change Dir: C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d0fjuf
+Change Dir: C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-v9kiil
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_6ec56/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6ec56.dir\build.make CMakeFiles/cmTC_6ec56.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d0fjuf'
-Building C object CMakeFiles/cmTC_6ec56.dir/testCCompiler.o
-D:\Keil_v5\ARM\ARMCC\bin\armcc.exe   --cpu=Cortex-M3 --c99  -o CMakeFiles\cmTC_6ec56.dir\testCCompiler.o -c C:\Users\Asahi\Desktop\FreeRTOS\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-d0fjuf\testCCompiler.c
-Linking C executable cmTC_6ec56.elf
-"D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6ec56.dir\link.txt --verbose=1
-D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe CMakeFiles/cmTC_6ec56.dir/testCCompiler.o -o cmTC_6ec56.elf --list cmTC_6ec56.map
-D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe: unrecognized option '--list'
-D:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ld.exe: use the --help option for usage information
-CMakeFiles\cmTC_6ec56.dir\build.make:97: recipe for target 'cmTC_6ec56.elf' failed
-mingw32-make.exe[1]: *** [cmTC_6ec56.elf] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d0fjuf'
-Makefile:126: recipe for target 'cmTC_6ec56/fast' failed
-mingw32-make.exe: *** [cmTC_6ec56/fast] Error 2
+Run Build Command(s):D:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_01fe0/fast && D:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_01fe0.dir\build.make CMakeFiles/cmTC_01fe0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-v9kiil'
+Building C object CMakeFiles/cmTC_01fe0.dir/testCCompiler.o
+D:\Keil_v5\ARM\ARMCC\bin\armcc.exe   --cpu=Cortex-M3 --c99  -o CMakeFiles\cmTC_01fe0.dir\testCCompiler.o -c C:\Users\Asahi\Desktop\FreeRTOS\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-v9kiil\testCCompiler.c
+Linking C executable cmTC_01fe0.elf
+"D:\Program Files\JetBrains\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_01fe0.dir\link.txt --verbose=1
+"D:\Program Files\JetBrains\CLion 2023.1.4\bin\mingw\bin\ld.exe" CMakeFiles/cmTC_01fe0.dir/testCCompiler.o -o cmTC_01fe0.elf --list cmTC_01fe0.map
+D:\Program Files\JetBrains\CLion 2023.1.4\bin\mingw\bin\ld.exe: unrecognized option '--list'
+D:\Program Files\JetBrains\CLion 2023.1.4\bin\mingw\bin\ld.exe: use the --help option for usage information
+CMakeFiles\cmTC_01fe0.dir\build.make:97: recipe for target 'cmTC_01fe0.elf' failed
+mingw32-make.exe[1]: *** [cmTC_01fe0.elf] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Asahi/Desktop/FreeRTOS/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-v9kiil'
+Makefile:126: recipe for target 'cmTC_01fe0/fast' failed
+mingw32-make.exe: *** [cmTC_01fe0/fast] Error 2
 
 
 

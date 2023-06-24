@@ -27,12 +27,10 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #if USE_KEY
-    uint32_t time5ms;
+uint32_t time5ms;
 #endif //USE_KEY
 uint32_t time1ms;
-uint32_t time5s;
 extern void xPortSysTickHandler(void);
-extern uint8_t StartFlag;
 /** @addtogroup STM32F10x_StdPeriph_Template
   * @{
   */
@@ -144,21 +142,6 @@ void DebugMon_Handler(void)
 
 void SysTick_Handler(void)
 {
-	if(StartFlag)
-	{
-		if (time5s < 5000 - 1)     //5000*1ms
-		{
-			time5s++;
-		}
-		else                      //5s
-		{
-			time5s = 4999;        
-		}
-	}
-	else
-	{
-		time5s = 0;
-	}
 #if USE_KEY
     if (time5ms < 5 - 1)     //5*100*10us = 5ms
     {
@@ -178,12 +161,12 @@ void SysTick_Handler(void)
 //    {
 //        time1ms = 0;
 #if (INCLUDE_xTaskGetSchedulerState == 1)
-        if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED)
-        {
+    if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED)
+    {
 #endif /* INCLUDE_xTaskGetSchedulerState */
-            xPortSysTickHandler();
+        xPortSysTickHandler();
 #if (INCLUDE_xTaskGetSchedulerState == 1)
-        }
+    }
 #endif  /* INCLUDE_xTaskGetSchedulerState */
 //    }
 }

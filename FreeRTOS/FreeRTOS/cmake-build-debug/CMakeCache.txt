@@ -126,7 +126,7 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/FreeRTOS
 CMAKE_LINKER:FILEPATH=D:/Keil_v5/ARM/ARMCC/bin/armlink.exe
 
 //No help, variable specified on the command line.
-CMAKE_MAKE_PROGRAM:UNINITIALIZED=C:/MinGW/bin/mingw32-make.exe
+CMAKE_MAKE_PROGRAM:UNINITIALIZED=D:/MinGW/bin/mingw32-make.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
