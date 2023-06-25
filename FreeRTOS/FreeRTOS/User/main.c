@@ -58,7 +58,7 @@ static void AppTaskCreate(void *arg)
     Test_Queue = xQueueCreate((UBaseType_t)QUEUE_LEN,
                               (UBaseType_t)QUEUE_SIZE);
     if(Test_Queue != NULL)
-        printf("åˆ›å»ºTest_Queueæ¶ˆæ¯é˜Ÿåˆ—æˆåŠŸ\r\n");
+        printf("´´½¨Test_QueueÏûÏ¢¶ÓÁĞ³É¹¦\r\n");
 
     xReturn = xTaskCreate((TaskFunction_t)Key_Task,
                           (const char *)"KeyTask",
@@ -67,7 +67,7 @@ static void AppTaskCreate(void *arg)
                           (UBaseType_t)1,
                           (TaskHandle_t *)&Key_Task_Handle);
     if (xReturn == pdPASS)
-        printf("åˆ›å»ºKey_TaskæˆåŠŸ\r\n");
+        printf("´´½¨Key_Task³É¹¦\r\n");
     xReturn = xTaskCreate((TaskFunction_t)Test_Task,
                           (const char *)"TestTask",
                           (uint16_t)512,
@@ -75,7 +75,7 @@ static void AppTaskCreate(void *arg)
                           (UBaseType_t)1,
                           (TaskHandle_t *)&Test_Task_Handle);
     if (xReturn == pdPASS)
-        printf("åˆ›å»ºTest_TaskæˆåŠŸ\r\n");
+        printf("´´½¨Test_Task³É¹¦\r\n");
     xReturn = xTaskCreate((TaskFunction_t)ADC_Task,
                           (const char *)"ADCTask",
                           (uint16_t)512,
@@ -83,7 +83,7 @@ static void AppTaskCreate(void *arg)
                           (UBaseType_t)1,
                           (TaskHandle_t *)&ADC_Task_Handle);
     if(xReturn == pdPASS)
-        printf("åˆ›å»ºADC_TaskæˆåŠŸ\r\n");
+        printf("´´½¨ADC_Task³É¹¦\r\n");
     xReturn = xTaskCreate((TaskFunction_t)LED_Task,
                           (const char *)"LEDTask",
                           (uint16_t)512,
@@ -91,7 +91,7 @@ static void AppTaskCreate(void *arg)
                           (UBaseType_t)1,
                           (TaskHandle_t *)&LED_Task_Handle);
     if(xReturn == pdPASS)
-        printf("åˆ›å»ºLED_TaskæˆåŠŸ\r\n");
+        printf("´´½¨LED_Task³É¹¦\r\n");
     xReturn = xTaskCreate((TaskFunction_t)DEBUG_Task,
                           (const char *)"DEBUGTask",
                           (uint16_t)512,
@@ -99,7 +99,7 @@ static void AppTaskCreate(void *arg)
                           (UBaseType_t)1,
                           (TaskHandle_t *)&DEBUG_Task_Handle);
     if(xReturn == pdPASS)
-        printf("åˆ›å»ºDEBUG_TaskæˆåŠŸ\r\n");
+        printf("´´½¨DEBUG_Task³É¹¦\r\n");
     vTaskDelete(AppTaskCreateHandle);
     taskEXIT_CRITICAL();
 }
@@ -141,23 +141,23 @@ static void Test_Task(void *parameter)
     while (1)
     {
         vTaskSuspendAll();
-        /*è°ƒç”¨DHT11_Read_TempAndHumidityè¯»å–æ¸©æ¹¿åº¦ï¼Œè‹¥æˆåŠŸåˆ™è¾“å‡ºè¯¥ä¿¡æ¯*/
+        /*µ÷ÓÃDHT11_Read_TempAndHumidity¶ÁÈ¡ÎÂÊª¶È£¬Èô³É¹¦ÔòÊä³ö¸ÃĞÅÏ¢*/
         if (DHT11_Read_TempAndHumidity(& DHT11_Data) == SUCCESS)
         {
             xTaskResumeAll();
-            //printf("\r\nè¯»å–DHT11æˆåŠŸ!\r\n\r\næ¹¿åº¦ä¸º%d.%d ï¼…RH ï¼Œæ¸©åº¦ä¸º %d.%dâ„ƒ \r\n", \
+            //printf("\r\n¶ÁÈ¡DHT11³É¹¦!\r\n\r\nÊª¶ÈÎª%d.%d £¥RH £¬ÎÂ¶ÈÎª %d.%d¡æ \r\n", \
                    DHT11_Data.humi_int, DHT11_Data.humi_deci, DHT11_Data.temp_int, DHT11_Data.temp_deci);
             xReturn = xQueueSend(Test_Queue,
                                  &DHT11_Data.humi_int,
                                  0);
 //			if(xReturn == pdPASS)
-//				printf("æ¹¿åº¦å‘é€æˆåŠŸ\r\n");
+//				printf("Êª¶È·¢ËÍ³É¹¦\r\n");
 
             xReturn = xQueueSend(Test_Queue,
                                  &DHT11_Data.temp_int,
                                  0);
 //			if(xReturn == pdPASS)
-//				printf("æ¸©åº¦å‘é€æˆåŠŸ\r\n");
+//				printf("ÎÂ¶È·¢ËÍ³É¹¦\r\n");
         }
         else
         {
@@ -173,10 +173,10 @@ static void ADC_Task(void *arg)
     float ADC_ConvertedValueLocal;
     while (1)
     {
-        ADC_ConvertedValueLocal =(float) ADC_ConvertedValue/4096*3.3; // è¯»å–è½¬æ¢çš„ADå€¼
+        ADC_ConvertedValueLocal =(float) ADC_ConvertedValue/4096*3.3; // ¶ÁÈ¡×ª»»µÄADÖµ
 
-        //printf("\r\n The current AD value = 0x%04X \r\n", ADC_ConvertedValue);
-        //printf("\r\n The current AD value = %f V \r\n",ADC_ConvertedValueLocal);
+        printf("\r\n The current AD value = 0x%04X \r\n", ADC_ConvertedValue);
+        printf("\r\n The current AD value = %f V \r\n",ADC_ConvertedValueLocal);
         vTaskDelay(1000);
     }
 }
@@ -215,7 +215,7 @@ static void DEBUG_Task(void *arg)
         if(xReturn == pdTRUE)
             printf("DEBUG: %d \r\n",r_queue);
         else
-            printf("æ•°æ®æ¥æ”¶å‡ºé”™ 0x%lx\r\n",xReturn);
+            printf("Êı¾İ½ÓÊÕ³ö´í 0x%lx\r\n",xReturn);
     }
 }
 

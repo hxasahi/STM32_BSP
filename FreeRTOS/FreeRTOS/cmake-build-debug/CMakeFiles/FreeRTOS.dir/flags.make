@@ -7,11 +7,11 @@ ASM_DEFINES = -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
 
 ASM_INCLUDES = -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\adc -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\color_led -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\DEBUG -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\delay -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\dht11 -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\dwt_delay -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\GPIO -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\Key -IC:\Users\Asahi\Desktop\FreeRTOS\FreeRTOS\include -IC:\Users\Asahi\Desktop\FreeRTOS\FreeRTOS\port\RVDS\ARM_CM3 -IC:\Users\Asahi\Desktop\FreeRTOS\Libraries\CMSIS -IC:\Users\Asahi\Desktop\FreeRTOS\Libraries\STM32F10x_StdPeriph_Driver\inc -IC:\Users\Asahi\Desktop\FreeRTOS\User
 
-ASM_FLAGS = --cpu=Cortex-M3   -c --thumb -O0 -D__MICROLIB --apcs=interwork --split_sections
+ASM_FLAGS = --cpu=Cortex-M3   -c --thumb -g -O0 -D__MICROLIB --apcs=interwork --split_sections
 
 C_DEFINES = -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
 
 C_INCLUDES = -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\adc -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\color_led -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\DEBUG -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\delay -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\dht11 -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\dwt_delay -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\GPIO -IC:\Users\Asahi\Desktop\FreeRTOS\BSP\Key -IC:\Users\Asahi\Desktop\FreeRTOS\FreeRTOS\include -IC:\Users\Asahi\Desktop\FreeRTOS\FreeRTOS\port\RVDS\ARM_CM3 -IC:\Users\Asahi\Desktop\FreeRTOS\Libraries\CMSIS -IC:\Users\Asahi\Desktop\FreeRTOS\Libraries\STM32F10x_StdPeriph_Driver\inc -IC:\Users\Asahi\Desktop\FreeRTOS\User
 
-C_FLAGS = --cpu=Cortex-M3 --c99 -g --thumb -O0 -D__MICROLIB --apcs=interwork --split_sections
+C_FLAGS = --cpu=Cortex-M3 --c99 -g --thumb -g -O0 -D__MICROLIB --apcs=interwork --split_sections
 

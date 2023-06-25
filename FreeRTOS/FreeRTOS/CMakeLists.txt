@@ -28,12 +28,16 @@ include_directories(
 )
 
 add_compile_definitions(USE_STDPERIPH_DRIVER STM32F10X_HD)
-
-add_link_options(--branchpatch=sdcomp-29491-629360 --strict --summary_stderr --info sizes,totals,unused,veneers --load_addr_map_info --xref --callgraph --symbols)
-add_link_options(--library_type=microlib --scatter=${CMAKE_SOURCE_DIR}/Project/Objects/BH-F103.sct)
-#add_link_options(--scatter=${CMAKE_SOURCE_DIR}/Project/Objects/BH-F103.sct)
-#add_compile_options(-O0 --apcs=interwork --split_sections)
-add_compile_options(-O0 -D__MICROLIB --apcs=interwork --split_sections)
+                        #设置宏定义
+add_compile_options(-g -O0 -D__MICROLIB --apcs=interwork --split_sections)
+                    #设置编译选项
+add_link_options(--library_type=microlib --strict --scatter=${CMAKE_SOURCE_DIR}/Project/Objects/BH-F103.sct
+                 #加载microlib和sct文件
+                 --summary_stderr --info summarysizes,sizes,totals,unused,veneers
+                 #设置map信息,summarysizes会同时在终端输出
+                 --load_addr_map_info --xref --callgraph --symbols
+                 #map文件生成在cmake-build-debug目录下，文件名为：工程名.map
+                 )
 
 add_executable(${PROJECT_NAME})
 target_sources(${PROJECT_NAME} PRIVATE
