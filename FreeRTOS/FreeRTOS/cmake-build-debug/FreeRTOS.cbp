@@ -185,6 +185,75 @@
 		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/CMSIS/system_stm32f10x.h">
 			<Option target="FreeRTOS"/>
 		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_adc.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_bkp.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_can.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_cec.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_crc.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dac.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dbgmcu.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dma.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_exti.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_flash.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_fsmc.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_i2c.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_iwdg.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_pwr.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rtc.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_sdio.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_spi.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_tim.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_wwdg.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
 		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c">
 			<Option target="FreeRTOS"/>
 		</Unit>
@@ -254,7 +323,13 @@
 		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c">
 			<Option target="FreeRTOS"/>
 		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/User/FreeRTOSConfig.h">
+			<Option target="FreeRTOS"/>
+		</Unit>
 		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/User/main.c">
+			<Option target="FreeRTOS"/>
+		</Unit>
+		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/User/stm32f10x_conf.h">
 			<Option target="FreeRTOS"/>
 		</Unit>
 		<Unit filename="C:/Users/Asahi/Desktop/FreeRTOS/User/stm32f10x_it.c">

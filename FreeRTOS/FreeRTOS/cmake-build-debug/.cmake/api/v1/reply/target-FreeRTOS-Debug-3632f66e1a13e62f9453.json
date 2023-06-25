@@ -1,0 +1,920 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "FreeRTOS.elf"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_link_options",
+			"add_compile_options",
+			"add_compile_definitions",
+			"include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "--cpu=Cortex-M3 --c99 -g"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-O0"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D__MICROLIB"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "--apcs=interwork"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "--split_sections"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "STM32F10X_HD"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "USE_STDPERIPH_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/adc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/color_led"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/DEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/delay"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/dht11"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/dwt_delay"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/GPIO"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/Key"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/FreeRTOS/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/FreeRTOS/port/RVDS/ARM_CM3"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/Libraries/CMSIS"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/User"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				69,
+				71,
+				74,
+				75,
+				76,
+				77
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "--cpu=Cortex-M3   -c"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-O0"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D__MICROLIB"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "--apcs=interwork"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "--split_sections"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "STM32F10X_HD"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "USE_STDPERIPH_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/adc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/color_led"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/DEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/delay"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/dht11"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/dwt_delay"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/GPIO"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/BSP/Key"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/FreeRTOS/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/FreeRTOS/port/RVDS/ARM_CM3"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/Libraries/CMSIS"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/Libraries/STM32F10x_StdPeriph_Driver/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Asahi/Desktop/FreeRTOS/User"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				73
+			]
+		}
+	],
+	"id" : "FreeRTOS::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "--cpu=Cortex-M3 --c99 -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--library_type=microlib",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--strict",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--scatter=C:/Users/Asahi/Desktop/FreeRTOS/Project/Objects/BH-F103.sct",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--summary_stderr",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--info",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "summarysizes,sizes,totals,unused,veneers",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--load_addr_map_info",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--xref",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--callgraph",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--symbols",
+				"role" : "flags"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "FreeRTOS",
+	"nameOnDisk" : "FreeRTOS.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				69,
+				71,
+				74,
+				75,
+				76,
+				77
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				5,
+				7,
+				9,
+				11,
+				13,
+				15,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				68,
+				70,
+				72
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				73
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "BSP/DEBUG/bsp_debug.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "BSP/DEBUG/bsp_debug.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "BSP/GPIO/bsp_gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "BSP/GPIO/bsp_gpio.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "BSP/Key/bsp_key.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "BSP/Key/bsp_key.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "BSP/adc/bsp_adc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "BSP/adc/bsp_adc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "BSP/color_led/bsp_color_led.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "BSP/color_led/bsp_color_led.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "BSP/delay/bsp_delay.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "BSP/delay/bsp_delay.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "BSP/dht11/bsp_dht11.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "BSP/dht11/bsp_dht11.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "BSP/dwt_delay/core_delay.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "BSP/dwt_delay/core_delay.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "FreeRTOS/src/croutine.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "FreeRTOS/src/event_groups.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "FreeRTOS/src/list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "FreeRTOS/src/queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "FreeRTOS/src/tasks.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "FreeRTOS/src/timers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_adc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_bkp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_can.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_cec.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_crc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dac.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dbgmcu.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_dma.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_exti.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_flash.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_fsmc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_i2c.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_iwdg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_pwr.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rtc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_sdio.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_spi.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_tim.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_wwdg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/misc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "User/FreeRTOSConfig.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "User/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "User/stm32f10x_conf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "User/stm32f10x_it.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "User/stm32f10x_it.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 1,
+			"path" : "Libraries/CMSIS/startup/startup_stm32f10x_hd.s",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/CMSIS/core_cm3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Libraries/CMSIS/system_stm32f10x.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "FreeRTOS/port/MemMang/heap_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "FreeRTOS/port/RVDS/ARM_CM3/port.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
